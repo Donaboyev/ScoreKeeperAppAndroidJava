@@ -1,0 +1,57 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.ScoreKeeperAppAndroidJava" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+    <style name="Theme.ScoreKeeperAppAndroidJava" parent="Base.Theme.ScoreKeeperAppAndroidJava" />
+
+    <style name="AddButtonsStyle">
+        <item name="android:background">@drawable/add_button_back</item>
+        <item name="android:layout_marginStart">@dimen/dimenMarginButtons</item>
+        <item name="android:layout_marginEnd">@dimen/dimenMarginButtons</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">@dimen/textSizeAddButtons</item>
+    </style>
+
+    <style name="TeamsNameTextStyle">
+        <item name="android:layout_marginTop">@dimen/dimenMarginTop</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:textSize">@dimen/textSizeTeamName</item>
+    </style>
+
+    <style name="ScoreTextStyle">
+        <item name="android:layout_marginTop">@dimen/dimenMarginScore</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:text">@string/textIntroScore</item>
+        <item name="android:textColor">@color/colorScoreText</item>
+        <item name="android:textSize">@dimen/textSizeScore</item>
+    </style>
+
+    <style name="NumberFoulsTextStyle">
+        <item name="android:layout_marginStart">@dimen/dimenPaddingAddScoreButtons</item>
+        <item name="android:layout_marginEnd">@dimen/dimenPaddingAddScoreButtons</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:text">@string/textIntroScore</item>
+        <item name="android:textColor">@color/colorFoulsText</item>
+        <item name="android:textSize">@dimen/textSizeFoulsTeam</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="ButtonsLayoutStyle">
+        <item name="android:layout_marginTop">@dimen/dimenMarginScore</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:paddingStart">@dimen/dimenPaddingAddScoreButtons</item>
+        <item name="android:paddingEnd">@dimen/dimenPaddingAddScoreButtons</item>
+    </style>
+
+    <style name="FoulsLayoutStyle">
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:layout_marginStart">@dimen/dimenMarginFoulsLayout</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:weightSum">5</item>
+    </style>
+
+</resources>

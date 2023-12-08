@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">ScoreKeeperApp</string>
+    <string name="name_team_1">Team 1</string>
+    <string name="name_team_2">Team 2</string>
+    <string name="textIntroScore">0</string>
+    <string name="textAddScore1">+1</string>
+    <string name="textAddScore2">+2</string>
+    <string name="textAddScore3">+3</string>
+    <string name="textAdd">+</string>
+    <string name="textOfFouls">Fouls</string>
+    <string name="textReset">Reset</string>
+</resources>

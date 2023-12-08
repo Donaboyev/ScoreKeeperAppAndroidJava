@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle">
+
+            <size android:width="@dimen/dimenWidthHeightAddButton" android:height="@dimen/dimenWidthHeightAddButton" />
+
+            <solid android:color="@color/colorWhitish" />
+
+            <corners android:radius="@dimen/radiusAddButton" />
+
+        </shape>
+    </item>
+    <item android:state_pressed="false">
+        <shape android:shape="rectangle">
+
+            <size android:width="@dimen/dimenWidthHeightAddButton" android:height="@dimen/dimenWidthHeightAddButton" />
+
+            <solid android:color="@color/colorWhite" />
+
+            <corners android:radius="@dimen/radiusAddButton" />
+
+        </shape>
+    </item>
+</selector>

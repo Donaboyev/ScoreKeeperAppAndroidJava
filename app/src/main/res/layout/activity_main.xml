@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBlack"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:baselineAligned="false"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/textTeam1"
+                style="@style/TeamsNameTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/name_team_1" />
+
+            <TextView
+                android:id="@+id/textScore1"
+                style="@style/ScoreTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textTeam1" />
+
+            <LinearLayout
+                style="@style/ButtonsLayoutStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textScore1">
+
+                <Button
+                    android:id="@+id/buttonAddScore1Team1"
+                    style="@style/AddButtonsStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/textAddScore1" />
+
+                <Button
+                    android:id="@+id/buttonAddScore2Team1"
+                    style="@style/AddButtonsStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/textAddScore2" />
+
+                <Button
+                    android:id="@+id/buttonAddScore3Team1"
+                    style="@style/AddButtonsStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/textAddScore3" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/FoulsLayoutStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start">
+
+                <Button
+                    android:id="@+id/buttonAddFoulTeam1"
+                    style="@style/AddButtonsStyle"
+                    android:layout_width="@dimen/dimenWidthAddButton"
+                    android:layout_height="wrap_content"
+                    android:text="@string/textAdd" />
+
+                <TextView
+                    android:id="@+id/textFoulTeam1"
+                    style="@style/NumberFoulsTextStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/textTeam2"
+                style="@style/TeamsNameTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/name_team_2" />
+
+            <TextView
+                android:id="@+id/textScore2"
+                style="@style/ScoreTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textTeam2" />
+
+            <LinearLayout
+                style="@style/ButtonsLayoutStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textScore2">
+
+                <Button
+                    android:id="@+id/buttonAddScore1Team2"
+                    style="@style/AddButtonsStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/textAddScore1" />
+
+                <Button
+                    android:id="@+id/buttonAddScore2Team2"
+                    style="@style/AddButtonsStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/textAddScore2" />
+
+                <Button
+                    android:id="@+id/buttonAddScore3Team2"
+                    style="@style/AddButtonsStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/textAddScore3" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/FoulsLayoutStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end">
+
+                <TextView
+                    android:id="@+id/textFoulTeam2"
+                    style="@style/NumberFoulsTextStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3" />
+
+                <Button
+                    android:id="@+id/buttonAddFoulTeam2"
+                    style="@style/AddButtonsStyle"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/textAdd" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textFoul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="@string/textOfFouls"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/textSizeFouls" />
+
+    <Button
+        android:id="@+id/buttonReset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/dimenMarginFoulsLayout"
+        android:background="@drawable/reset_button_back"
+        android:text="@string/textReset"
+        android:padding="@dimen/dimenMarginButtons"
+        android:textSize="@dimen/textSizeFouls"
+        android:textColor="@color/colorWhite"
+        android:textStyle="bold" />
+
+</RelativeLayout>

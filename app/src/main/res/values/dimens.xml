@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="dimenMarginTop">16dp</dimen>
+    <dimen name="textSizeTeamName">30sp</dimen>
+    <dimen name="dimenMarginScore">24dp</dimen>
+    <dimen name="dimenMarginFoulsLayout">20dp</dimen>
+    <dimen name="textSizeScore">40sp</dimen>
+    <dimen name="dimenPaddingAddScoreButtons">10dp</dimen>
+    <dimen name="dimenMarginButtons">2dp</dimen>
+    <dimen name="textSizeAddButtons">12sp</dimen>
+    <dimen name="textSizeFouls">20sp</dimen>
+    <dimen name="textSizeFoulsTeam">24sp</dimen>
+    <dimen name="dimenWidthAddButton">40dp</dimen>
+    <dimen name="radiusResetButton">6dp</dimen>
+    <dimen name="dimenWidthHeightAddButton">40dp</dimen>
+    <dimen name="radiusAddButton">20dp</dimen>
+</resources>
